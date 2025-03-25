@@ -19,3 +19,24 @@
     "production": {}
   }
 }
+{
+  "cli": {
+    "version": ">=3.0.0"
+  },
+  "build": {
+    "production": {
+      "distribution": "store",
+      "android": {
+        "artifactPath": "android/app/build/outputs/apk/release/app-release.apk"
+      }
+    }
+  },
+  "submit": {
+    "production": {
+      "android": {
+        "serviceAccountKeyPath": "./google-service-account.json",
+        "track": "internal"
+      }
+    }
+  }
+}
